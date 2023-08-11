@@ -12,7 +12,7 @@ export default function CreateBook() {
     e.preventDefault();
     const bookvar = { author: author, title: title, description: description };
 
-    axios.post("http://localhost:5000/add", bookvar).then((res) => {
+    axios.post("https://finals-renz-cruz-backend.onrender.com/add", bookvar).then((res) => {
       window.location = "/";
       console.log("add in progress");
     });
